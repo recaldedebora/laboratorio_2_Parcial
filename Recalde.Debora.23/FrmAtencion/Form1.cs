@@ -41,7 +41,7 @@ namespace FrmAtencion
             if (lstMedicos.SelectedIndex > -1)
             {
                 PersonalMedico medicoSeleccionado = (PersonalMedico)lstMedicos.SelectedItem;
-                rtbInfoMedico.Text = medicoSeleccionado.FichaExtra();
+                rtbInfoMedico.Text = Persona.FichaPersonal(medicoSeleccionado);
             }
         }
 

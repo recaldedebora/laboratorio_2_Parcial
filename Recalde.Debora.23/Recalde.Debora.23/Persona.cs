@@ -43,14 +43,14 @@ namespace Recalde.Debora._23
             sb.AppendLine(NombreCompleto);
             return sb.ToString();
         }
-        public string FichaPersonal(Persona p)
+        public static string FichaPersonal(Persona p)
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine(p.ToString());
-            sb.AppendLine($"EDAD: {Edad}");
-            sb.AppendLine(FichaExtra());
+            sb.AppendLine($"EDAD: {p.Edad}");
+            sb.AppendLine(p.FichaExtra());
             return sb.ToString();
         }
-        public abstract string FichaExtra();
+        internal abstract string FichaExtra();
     }
 }
