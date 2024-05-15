@@ -14,7 +14,7 @@ namespace Recalde.Debora._23
             diagnostico = string.Empty;
         }
         public string Diagnostico { get => diagnostico; set => diagnostico = value; }
-        public override string FichaExtra()
+        internal override string FichaExtra()
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine($"Reside en: {barrioResidencia}");

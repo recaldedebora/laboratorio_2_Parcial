@@ -16,7 +16,7 @@ namespace Recalde.Debora._23
             consultas = new List<Consulta>();
             this.esResidente = esResidente;
         }
-        public override string FichaExtra()
+        internal override string FichaExtra()
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine($"¿Finalizó residencia? {esResidente}");
